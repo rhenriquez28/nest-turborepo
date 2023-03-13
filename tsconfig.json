@@ -18,8 +18,18 @@
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
     "paths": {
-      "@app/nest-lib": ["packages/nest-lib/src"],
-      "@app/nest-lib/*": ["packages/nest-lib/src/*"]
+      "@app/nest-lib": [
+        "packages/nest-lib/src"
+      ],
+      "@app/nest-lib/*": [
+        "packages/nest-lib/src/*"
+      ],
+      "@app/nest-lib-2": [
+        "packages/nest-lib-2/src"
+      ],
+      "@app/nest-lib-2/*": [
+        "packages/nest-lib-2/src/*"
+      ]
     }
   }
 }

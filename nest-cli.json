@@ -4,7 +4,7 @@
   "sourceRoot": "src",
   "compilerOptions": {
     "deleteOutDir": true,
-    "webpack": true,
+    "webpack": false,
     "tsConfigPath": "tsconfig.json"
   },
   "monorepo": true,
@@ -35,6 +35,15 @@
       "sourceRoot": "packages/nest-lib/src",
       "compilerOptions": {
         "tsConfigPath": "packages/nest-lib/tsconfig.json"
+      }
+    },
+    "nest-lib-2": {
+      "type": "library",
+      "root": "packages/nest-lib-2",
+      "entryFile": "index",
+      "sourceRoot": "packages/nest-lib-2/src",
+      "compilerOptions": {
+        "tsConfigPath": "packages/nest-lib-2/tsconfig.lib.json"
       }
     }
   }

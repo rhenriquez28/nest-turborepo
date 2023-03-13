@@ -12,9 +12,9 @@
   "projects": {
     "nest-app": {
       "type": "application",
-      "root": ".",
+      "root": "apps/nest-app",
       "entryFile": "main",
-      "sourceRoot": "src",
+      "sourceRoot": "apps/nest-app/src",
       "compilerOptions": {
         "tsConfigPath": "apps/nest-app/tsconfig.json"
       }

@@ -8,42 +8,43 @@
     "tsConfigPath": "tsconfig.json"
   },
   "monorepo": true,
-  "root": "apps/nest-app",
+  "root": ".",
   "projects": {
     "nest-app": {
       "type": "application",
-      "root": "apps/nest-app",
+      "root": ".",
       "entryFile": "main",
       "sourceRoot": "src",
       "compilerOptions": {
-        "tsConfigPath": "apps/nest-app/tsconfig.json"
+        "webpack": true,
+        "tsConfigPath": "tsconfig.json"
       }
     },
     "nest-app-2": {
       "type": "application",
-      "root": "apps/nest-app-2",
+      "root": "../../apps/nest-app-2",
       "entryFile": "main",
-      "sourceRoot": "apps/nest-app-2/src",
+      "sourceRoot": "../../apps/nest-app-2/src",
       "compilerOptions": {
-        "tsConfigPath": "apps/nest-app-2/tsconfig.json"
+        "tsConfigPath": "../../apps/nest-app-2/tsconfig.json"
       }
     },
     "nest-lib": {
       "type": "library",
-      "root": "packages/nest-lib",
+      "root": "../../packages/nest-lib",
       "entryFile": "index",
-      "sourceRoot": "packages/nest-lib/src",
+      "sourceRoot": "../../packages/nest-lib/src",
       "compilerOptions": {
-        "tsConfigPath": "packages/nest-lib/tsconfig.json"
+        "tsConfigPath": "../../packages/nest-lib/tsconfig.json"
       }
     },
     "nest-lib-2": {
       "type": "library",
-      "root": "packages/nest-lib-2",
+      "root": "../../packages/nest-lib-2",
       "entryFile": "index",
-      "sourceRoot": "packages/nest-lib-2/src",
+      "sourceRoot": "../../packages/nest-lib-2/src",
       "compilerOptions": {
-        "tsConfigPath": "packages/nest-lib-2/tsconfig.lib.json"
+        "tsConfigPath": "../../packages/nest-lib-2/tsconfig.lib.json"
       }
     }
   }

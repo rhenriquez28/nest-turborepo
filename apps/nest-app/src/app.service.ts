@@ -1,4 +1,4 @@
-import { NestLibService } from "@app/nest-lib";
+import { NestLibService } from "nest-lib";
 import { Injectable } from "@nestjs/common";
 
 @Injectable()
@@ -6,6 +6,6 @@ export class AppService {
   constructor(private nestLibService: NestLibService) {}
 
   getHello(): string {
-    return "Hello World! " + this.nestLibService.getHello();
+    return "Hello World! heyyy" + this.nestLibService.getHello();
   }
 }

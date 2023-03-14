@@ -1,4 +1,4 @@
-import { NestLibModule } from "nest-lib";
+import { NestLibModule } from "@app/nest-lib";
 import { Module } from "@nestjs/common";
 import { AppController } from "./app.controller";
 import { AppService } from "./app.service";

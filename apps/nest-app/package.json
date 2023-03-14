@@ -6,9 +6,9 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "build": "yarn --cwd ../.. nest build nest-app --webpackPath apps/nest-app/webpack.config.js",
+    "build": "yarn --cwd ../.. nest build nest-app",
     "format": "prettier --write \"apps/**/*.ts\" \"libs/**/*.ts\"",
-    "start": "node dist/main",
+    "start": "node ../../dist/apps/nest-app/main",
     "start:dev": "nest start --watch --config ../../nest-cli.json --path tsconfig.json",
     "start:debug": "nest start --debug --watch --config ../../nest-cli.json --path tsconfig.json",
     "start:prod": "node dist/apps/nest-app/main",
@@ -23,7 +23,6 @@
     "@nestjs/common": "^9.0.0",
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",
-    "nest-lib": "*",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.2.0"
   },

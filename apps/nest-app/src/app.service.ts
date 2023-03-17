@@ -1,4 +1,4 @@
-import { NestLibService } from "@app/nest-lib";
+import { NestLibService } from "nest-lib";
 import { Injectable } from "@nestjs/common";
 
 @Injectable()

@@ -6,7 +6,7 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "build": "yarn --cwd ../.. nest build nest-app",
+    "build": "yarn --cwd ../.. nest build nest-app --webpack --webpackPath apps/nest-app/webpack.config.js",
     "format": "prettier --write \"apps/**/*.ts\" \"libs/**/*.ts\"",
     "start": "node ../../dist/apps/nest-app/main",
     "start:dev": "nest start --watch --config ../../nest-cli.json --path tsconfig.json",
